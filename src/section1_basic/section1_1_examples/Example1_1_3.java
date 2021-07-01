@@ -1,5 +1,8 @@
-package section1_basic.section1_1_examples;
+package algorithmPractice.src.section1_basic.section1_1_examples;
 
+/**
+ * P13
+ */
 public class Example1_1_3 {
     public static void main(String[] args) {
         int number2 = 23;
@@ -10,6 +13,11 @@ public class Example1_1_3 {
         }
     }
 
+    /**
+     * 判断是否是素数
+     * @param number 需要判断的数字
+     * @return { boolean }
+     */
     private static boolean isPrimeNumber(int number) {
         if(number < 2) {
             return false;
