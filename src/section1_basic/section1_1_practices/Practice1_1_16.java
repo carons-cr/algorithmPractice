@@ -1,4 +1,4 @@
-package section1_basic.section1_1_practices;
+package algorithmPractice.src.section1_basic.section1_1_practices;
 
 public class Practice1_1_16 {
     public static void main(String[] args) {
