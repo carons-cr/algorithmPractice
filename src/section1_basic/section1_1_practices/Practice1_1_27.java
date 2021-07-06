@@ -1,4 +1,4 @@
-package section1_basic.section1_1_practices;
+package algorithmPractice.src.section1_basic.section1_1_practices;
 
 public class Practice1_1_27 {
     public static void main(String[] args) {
@@ -27,7 +27,6 @@ public class Practice1_1_27 {
         } else if (N == 0) {
             arr[N][k] = 0.0;
         } else if (k == 0) {
-            arr[N - 1][k] += arr[N - 1][k] == 0.0 ? binomial2(N - 1, k, p, arr) : 0.0;
             arr[N][k] = (1 - p) * binomial2(N - 1, k, p, arr);
         } else {
             arr[N - 1][k] += arr[N - 1][k] == 0.0 ? binomial2(N - 1, k, p, arr) : 0.0;

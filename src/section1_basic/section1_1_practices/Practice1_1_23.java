@@ -1,4 +1,4 @@
-package section1_basic.section1_1_practices;
+package algorithmPractice.src.section1_basic.section1_1_practices;
 
 import java.util.Scanner;
 
@@ -34,7 +34,7 @@ public class Practice1_1_23 {
         }
     }
 
-    private static void binarySearchTest() {//1,2,3\n+\n1
+    private static void binarySearchTest() {//1,2,3 + 1 4, print 4; //1,2,3 - 1 4, print 1
         Scanner scanner = new Scanner(System.in);
         String[] whiteListStr = scanner.next().split(",");
         int[] whiteList = new int[whiteListStr.length];

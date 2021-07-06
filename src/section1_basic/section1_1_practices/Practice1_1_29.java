@@ -1,8 +1,8 @@
-package section1_basic.section1_1_practices;
+package algorithmPractice.src.section1_basic.section1_1_practices;
 
 public class Practice1_1_29 {
     public static void main(String[] args) {
-        int key = 9;
+        int key = 8;
         int[] orderedArray = {1, 1, 2, 4, 5, 6, 6, 6, 7, 9, 9, 9, 9, 9, 9, 10, 15, 18, 20};
         System.out.println(Practice1_1_29.lowerCount(key, orderedArray));
         System.out.println(Practice1_1_29.equalCount(key, orderedArray));
