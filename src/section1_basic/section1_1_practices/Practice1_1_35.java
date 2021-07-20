@@ -1,4 +1,4 @@
-package section1_basic.section1_1_practices;
+package algorithmPractice.src.section1_basic.section1_1_practices;
 
 import java.util.Random;
 
@@ -9,7 +9,7 @@ public class Practice1_1_35 {
     public static void main(String[] args) {
         Practice1_1_35.calculateDist();
         Practice1_1_35.printDist(dist);
-        for (int N = 1000000; N < 10000000; N += 100000) { //N为9400000时才符合要求
+        for (int N = 1000000; N < 10000000; N += 100000) {
             double[] actualDist = Practice1_1_35.simulataDist(N);
             for (int i = 0; i < dist.length; i++) {
                 if (Math.abs(actualDist[i] - dist[i]) >= 1e-4) {
@@ -18,7 +18,7 @@ public class Practice1_1_35 {
                 if (i == dist.length - 1) {
                     System.out.println("N为" + N + "时经验数据和准确数据吻合程度达到小数点后三位");
                     Practice1_1_35.printDist(actualDist);
-                    N = 10000000;
+                    return;
                 }
             }
         }
