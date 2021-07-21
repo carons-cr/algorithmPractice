@@ -2,9 +2,9 @@ package algorithmPractice.src.section1_basic.section1_1_practices;
 
 import java.util.Arrays;
 
-public class Practice1_1_36 {
+public class Practice1_1_37 {
     public static void main(String[] args) {
-        shuffleTest ( 4, 8 );
+        shuffleTest ( 4, 4 );
     }
 
     public static void shuffleTest(int M, int N) {
@@ -36,7 +36,7 @@ public class Practice1_1_36 {
     public static void shuffle(int[] a) {
         int N = a.length;
         for ( int i = 1 ; i < N ; i++ ) {
-            int random  = i + ( int ) ( Math.random ( ) * (N - i) );
+            int random  = ( int ) ( Math.random ( )*N);
             int temp = a[i];
             a[i] = a[random];
             a[random] = temp;
